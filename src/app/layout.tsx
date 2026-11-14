@@ -16,15 +16,40 @@ const jakarta = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://luma-learning.vercel.app"
+  ),
   title: "Luma — Build skills that move you forward",
-  description: "Practical courses in design, technology, business and creativity. Learn from people who do the work, one focused lesson at a time.",
+  description:
+    "Practical courses in design, technology, business and creativity. Learn from people who do the work, one focused lesson at a time.",
   applicationName: "Luma Learning",
-  icons: { icon: "/images/logo-dark.svg" },
+  icons: {
+    icon: "/images/logo-dark.svg",
+    apple: "/images/logo-dark.svg",
+  },
   openGraph: {
     title: "Luma — Build skills that move you forward",
-    description: "Practical learning for curious people. Start with one course. Build from there.",
-    type: "website",
+    description:
+      "Practical courses in design, technology, business and creativity. Learn from people who do the work, one focused lesson at a time.",
+    url: "/",
+    siteName: "Luma Learning",
     locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero-learner.jpg",
+        width: 900,
+        height: 1100,
+        alt: "Luma Learning — Student advancing design and creative skills",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luma — Build skills that move you forward",
+    description:
+      "Practical courses in design, technology, business and creativity. Learn from people who do the work, one focused lesson at a time.",
+    images: ["/images/hero-learner.jpg"],
   },
   robots: { index: false, follow: false },
 };
