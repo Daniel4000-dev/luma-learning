@@ -1,0 +1,371 @@
+{
+  "figmaFile": "qTt9irBIuEQbjsnSwnAbPC",
+  "frames": {
+    "desktop": "2:7",
+    "mobile": "2:4195"
+  },
+  "assets": [
+    {
+      "name": "category-arrow",
+      "file": "public/images/category-arrow.svg",
+      "sha256": "ca17eef51d5c9e539f03d81a55fd12eb83a614550061b3cd9aec3ef4d03b9bbb",
+      "format": "SVG",
+      "width": 20.0,
+      "height": 20.0,
+      "sourceNodes": [
+        "2:131",
+        "2:150",
+        "2:169",
+        "2:188"
+      ]
+    },
+    {
+      "name": "community-01",
+      "file": "public/images/community-01.jpg",
+      "sha256": "eb3e528cd57335e2d6ae0d6e98b51aa88de198b8edb676e7b1a37758386a061c",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1255.0,
+      "sourceNodes": [
+        "4:1139"
+      ]
+    },
+    {
+      "name": "community-02",
+      "file": "public/images/community-02.jpg",
+      "sha256": "ae5540c18d1e62d11ee9462cdc62d7b0c3e3f823d87a1200bacbcbfc387367df",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1253.0,
+      "sourceNodes": [
+        "4:1140"
+      ]
+    },
+    {
+      "name": "community-03",
+      "file": "public/images/community-03.jpg",
+      "sha256": "e91e2d42b28da0b89364bd5c37cbaf11e19b91c2d1897653209129e8a5880e34",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1253.0,
+      "sourceNodes": [
+        "4:1142"
+      ]
+    },
+    {
+      "name": "community-04",
+      "file": "public/images/community-04.jpg",
+      "sha256": "850a4feb196ed40f5845799edacfbf90413e973810b6f7c064ffcec9d31f0b1e",
+      "format": "JPEG",
+      "width": 868.0,
+      "height": 1300.0,
+      "sourceNodes": [
+        "4:1143"
+      ]
+    },
+    {
+      "name": "community-05",
+      "file": "public/images/community-05.jpg",
+      "sha256": "ba90b99b964e974b5a9e0bd035c4b8e94030e6d55c0647ca40c483c01d155b00",
+      "format": "JPEG",
+      "width": 975.0,
+      "height": 1300.0,
+      "sourceNodes": [
+        "4:1144"
+      ]
+    },
+    {
+      "name": "community-06",
+      "file": "public/images/community-06.jpg",
+      "sha256": "df7198c09bc534cf57dccfab538a5336b46e3042c6e9915a26235f64993fe50f",
+      "format": "JPEG",
+      "width": 859.0,
+      "height": 1300.0,
+      "sourceNodes": [
+        "4:1146"
+      ]
+    },
+    {
+      "name": "community-07",
+      "file": "public/images/community-07.jpg",
+      "sha256": "57be2ae75749b39b373befe9d38bbdc7a4ae8c778fafc46f89e31b84c374d848",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1253.0,
+      "sourceNodes": [
+        "4:1147"
+      ]
+    },
+    {
+      "name": "community-08",
+      "file": "public/images/community-08.jpg",
+      "sha256": "86ad5589d3827ef715e8b8962f825652d278b194c85b4f31d9453a550c3045e7",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1255.0,
+      "sourceNodes": [
+        "4:1148"
+      ]
+    },
+    {
+      "name": "community-09",
+      "file": "public/images/community-09.jpg",
+      "sha256": "f6c006807c71eac97cc32e387260a7e9a323fa80496038952ffdeefb06eee96f",
+      "format": "JPEG",
+      "width": 1880.0,
+      "height": 1253.0,
+      "sourceNodes": [
+        "4:1150"
+      ]
+    },
+    {
+      "name": "community-10",
+      "file": "public/images/community-10.jpg",
+      "sha256": "2ed5a180ff067dcabf6bf2fb4573ea15f6350957fec01be2bae77c13ab052d89",
+      "format": "JPEG",
+      "width": 1043.0,
+      "height": 1300.0,
+      "sourceNodes": [
+        "4:1151"
+      ]
+    },
+    {
+      "name": "contact-clock",
+      "file": "public/images/contact-clock.svg",
+      "sha256": "cdc2b4f273bcb2405372de3930a2ca036ced49ef914ab0b7339b3e8b913507f4",
+      "format": "SVG",
+      "width": 20.0,
+      "height": 20.0,
+      "sourceNodes": [
+        "19:120"
+      ]
+    },
+    {
+      "name": "contact-email",
+      "file": "public/images/contact-email.svg",
+      "sha256": "1478f489948f5cff5c96a959d2ebdd206fef9134955db537a26fbbf8ee1a0592",
+      "format": "SVG",
+      "width": 24.0,
+      "height": 24.0,
+      "sourceNodes": [
+        "19:86"
+      ]
+    },
+    {
+      "name": "cta-decoration-1",
+      "file": "public/images/cta-decoration-1.svg",
+      "sha256": "4b6aa19976b58fae66847098581039e7baf6e6a113d54ec33a7204a8dcbe832a",
+      "format": "SVG",
+      "width": 82.5595,
+      "height": 82.5595,
+      "sourceNodes": [
+        "7:1309"
+      ]
+    },
+    {
+      "name": "cta-decoration-2",
+      "file": "public/images/cta-decoration-2.svg",
+      "sha256": "bc5fe3aac8e02688742f666b45e1c3d6f9b442020f07001d668b2e5c91e8eb81",
+      "format": "SVG",
+      "width": 160.0,
+      "height": 160.0,
+      "sourceNodes": [
+        "7:1310"
+      ]
+    },
+    {
+      "name": "cta-decoration-3",
+      "file": "public/images/cta-decoration-3.svg",
+      "sha256": "2d90addb2cd3058e8d447d8f8973c2aa1348288de2aaac35544ccc2f77e91422",
+      "format": "SVG",
+      "width": 32.0,
+      "height": 32.0,
+      "sourceNodes": [
+        "7:1317"
+      ]
+    },
+    {
+      "name": "cta-decoration-4",
+      "file": "public/images/cta-decoration-4.svg",
+      "sha256": "7e075e586df9418fc9a39b87da86e6644cf913c21e7aca9cd583ed09fe2088df",
+      "format": "SVG",
+      "width": 61.376,
+      "height": 61.376,
+      "sourceNodes": [
+        "7:1319"
+      ]
+    },
+    {
+      "name": "cta-decoration-5",
+      "file": "public/images/cta-decoration-5.svg",
+      "sha256": "73ece20023824e7fed33df92ad6e44ce9218c9aa7d3dbcc9b94ac3891be3cf28",
+      "format": "SVG",
+      "width": 48.0,
+      "height": 48.0,
+      "sourceNodes": [
+        "7:1321"
+      ]
+    },
+    {
+      "name": "featured-arrow",
+      "file": "public/images/featured-arrow.svg",
+      "sha256": "851e6e023ca35ad12318f02e099f4c465dffb78d0ac2d442618be4b1d1428bd9",
+      "format": "SVG",
+      "width": 20.0,
+      "height": 20.0,
+      "sourceNodes": [
+        "15:168"
+      ]
+    },
+    {
+      "name": "featured-course",
+      "file": "public/images/featured-course.jpg",
+      "sha256": "2aa8c381bc4ac15a0fa6a23a8ab2fbf2da9021099598628abbdb94dbd2fabab5",
+      "format": "JPEG",
+      "width": 700.0,
+      "height": 500.0,
+      "sourceNodes": [
+        "2:201"
+      ]
+    },
+    {
+      "name": "hero-learner",
+      "file": "public/images/hero-learner.jpg",
+      "sha256": "fcfd86c89cec908ed5ecaa17864e5a7d85cad03d57440f0de8f174784a234e0a",
+      "format": "JPEG",
+      "width": 900.0,
+      "height": 1100.0,
+      "sourceNodes": [
+        "2:76"
+      ]
+    },
+    {
+      "name": "learner-avatar-1",
+      "file": "public/images/learner-avatar-1.jpg",
+      "sha256": "9359d16dbf6072bf1bece572a62e0d0f291f041a5562bd3426ed205785b1d4ef",
+      "format": "JPEG",
+      "width": 80.0,
+      "height": 80.0,
+      "sourceNodes": [
+        "2:60",
+        "2:360"
+      ]
+    },
+    {
+      "name": "learner-avatar-2",
+      "file": "public/images/learner-avatar-2.jpg",
+      "sha256": "7d11412806e64a3cf7a1fab14e6e43bf1e10320fd59202fe7d799a48ca574f02",
+      "format": "JPEG",
+      "width": 80.0,
+      "height": 80.0,
+      "sourceNodes": [
+        "2:61",
+        "2:361"
+      ]
+    },
+    {
+      "name": "learner-avatar-3",
+      "file": "public/images/learner-avatar-3.jpg",
+      "sha256": "f91003b7a52bd521742d776dec4cf9bd0e1b9a89858a4511ec4e4b28e877dac0",
+      "format": "JPEG",
+      "width": 80.0,
+      "height": 80.0,
+      "sourceNodes": [
+        "2:62",
+        "2:362"
+      ]
+    },
+    {
+      "name": "learner-avatar-4",
+      "file": "public/images/learner-avatar-4.jpg",
+      "sha256": "699a36e58eb64d5723882c907505c08f35b070583f2f1e357f25412b3ee34616",
+      "format": "JPEG",
+      "width": 80.0,
+      "height": 80.0,
+      "sourceNodes": [
+        "2:363"
+      ]
+    },
+    {
+      "name": "logo-dark",
+      "file": "public/images/logo-dark.svg",
+      "sha256": "e3a116ca9c5723051385f8c57cca1d2ec550201ab8d47dc7ae191d594e3597d4",
+      "format": "SVG",
+      "width": 53.7379,
+      "height": 16.918,
+      "sourceNodes": [
+        "15:119"
+      ]
+    },
+    {
+      "name": "logo-light",
+      "file": "public/images/logo-light.svg",
+      "sha256": "08e7795352c5f524cc62503b2bbbdfe3858a425c7d582272f31023884ad94558",
+      "format": "SVG",
+      "width": 53.7379,
+      "height": 16.918,
+      "sourceNodes": [
+        "18:634"
+      ]
+    },
+    {
+      "name": "quote-mark",
+      "file": "public/images/quote-mark.svg",
+      "sha256": "f192f5512367570eb597191379787fe17246e871cdb32f7908a3623fa25927f2",
+      "format": "SVG",
+      "width": 23.7109,
+      "height": 21.9531,
+      "sourceNodes": [
+        "18:204"
+      ]
+    },
+    {
+      "name": "rating-star",
+      "file": "public/images/rating-star.svg",
+      "sha256": "5ec76ebf626a50cddb38e7cd9ddb1dafd6708859c2c6abc221ad2f2f925ab613",
+      "format": "SVG",
+      "width": 14.0,
+      "height": 14.0,
+      "sourceNodes": [
+        "2:86",
+        "2:88",
+        "2:90",
+        "2:92",
+        "2:94"
+      ]
+    },
+    {
+      "name": "testimonial-alex-morgan",
+      "file": "public/images/testimonial-alex-morgan.jpg",
+      "sha256": "1d5e956c675774f9e3e17da2655f56734268a434ebe040ee71a5f46f2441f2ad",
+      "format": "JPEG",
+      "width": 200.0,
+      "height": 200.0,
+      "sourceNodes": [
+        "2:316"
+      ]
+    },
+    {
+      "name": "contact-clock-mobile",
+      "file": "public/images/contact-clock-mobile.svg",
+      "sha256": "0dd439b92790108383b31b000c7eed9e44881e1ee4ef53f38e0cfc70d760e05f",
+      "format": "SVG",
+      "width": 20.0,
+      "height": 20.0,
+      "sourceNodes": [
+        "21:71"
+      ]
+    },
+    {
+      "name": "menu-icon",
+      "file": "public/images/menu-icon.svg",
+      "sha256": "6c8f83376e60af6e3dbc75dd729623caf238cd2aa169b72b55e2a1ed8af8193f",
+      "format": "SVG",
+      "width": 24.0,
+      "height": 24.0,
+      "sourceNodes": [
+        "2:4205"
+      ]
+    }
+  ]
+}
