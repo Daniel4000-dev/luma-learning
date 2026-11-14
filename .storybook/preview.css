@@ -1,0 +1,6 @@
+/* Same locally installed fonts as the app, without importing its document layout. */
+:root {
+  --font-inter: "Inter Variable";
+  --font-jakarta: "Plus Jakarta Sans Variable";
+}
+body { background: #f9f8f3; }
