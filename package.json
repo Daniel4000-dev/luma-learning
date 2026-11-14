@@ -12,7 +12,7 @@
     "start": "next start --hostname 0.0.0.0",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
-    "test": "node --test src/lib/contact-validation.test.ts",
+    "test": "node --import jiti/register --test src/lib/contact-validation.test.ts",
     "check": "npm run lint && npm run typecheck && npm test && npm run verify:assets && npm run build && npm run build-storybook",
     "verify:assets": "node scripts/verify-assets.mjs",
     "storybook": "storybook dev -p 6006 --no-open",
