@@ -8,4 +8,5 @@ coverage/
 *.tsbuildinfo
 npm-debug.log*
 storybook-static/
+AGENTS.md
 

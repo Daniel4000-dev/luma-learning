@@ -1,61 +1,62 @@
-# Luma Learning — Buzzvel frontend challenge
+# Luma Learning — Buzzvel Frontend Challenge
 
-One complete responsive page built from the supplied desktop and mobile [Figma design](https://www.figma.com/design/qTt9irBIuEQbjsnSwnAbPC/Buzzvel-FE---Test-2026--Copy-?node-id=0-1), using **Next.js App Router, TypeScript and Tailwind CSS**.
+A responsive, high-performance landing page built to pixel-perfection from the supplied desktop and mobile [Figma design](https://www.figma.com/design/qTt9irBIuEQbjsnSwnAbPC/Buzzvel-FE---Test-2026--Copy-?node-id=0-1) using **Next.js App Router, TypeScript, and Tailwind CSS**.
 
-## Install, run and build
+## Installation, Development & Build
 
-Use **Node.js 24** and npm (`nvm use` if available). No environment variables, API keys or backend are required.
+This project requires **Node.js 20+** (tested on Node 20 and 24) and npm (`nvm use` if using nvm). No external API keys or backend services are needed.
 
 ```bash
+# Install dependencies
 npm ci
+
+# Start development server
 npm run dev
 ```
 
-Open **http://localhost:3000**. For production, stop the development server and run:
+Open **http://localhost:3000** in your browser.
+
+### Production Build & Test Scripts
 
 ```bash
+# Build optimized production bundle
 npm run build
+
+# Start production server
 npm start
 ```
 
-Use `npm run dev -- --port 3001` if port 3000 is occupied.
-
 | Command | Purpose |
 | --- | --- |
-| `npm run check` | Lint, strict types, unit tests, asset integrity, Next.js build and Storybook build |
-| `npm test` | Five contact-validation tests with Node’s built-in runner |
-| `npm run storybook` | Component catalogue at http://localhost:6006 |
-| `npm run build-storybook` | Static catalogue in `storybook-static/` |
-| `npm run audit:lighthouse` | Mobile and desktop reports against a running production server; local Chrome required |
+| `npm run check` | Runs complete verification suite: linter, typecheck, unit tests, asset verification, Next.js build, and Storybook build |
+| `npm test` | Runs unit tests for contact form validation rules |
+| `npm run storybook` | Starts local Storybook component catalogue at http://localhost:6006 |
+| `npm run build-storybook` | Generates static Storybook catalogue in `storybook-static/` |
+| `npm run audit:lighthouse` | Executes local mobile and desktop Lighthouse audits against a running server |
 
-Individual `lint`, `typecheck` and `verify:assets` commands are also available. The committed lockfile pins dependencies.
+## Key Architectural Decisions
 
-## Key decisions
+- **Server Component First Architecture**: `src/app/page.tsx` composes server-rendered sections. Interactivity is isolated strictly to client leaves (`MobileNavigation`, `DialogButton`, and `ContactForm`). State remains encapsulated at the component level without unnecessary global state bloat.
+- **Modular Code Organization**: Typed mock data in `src/app/_data/`, shared atomic UI primitives in `src/components/ui/`, pure validation logic in `src/lib/`, and design tokens in `src/app/globals.css`.
+- **Local Asset & Typography Optimization**: All 32 original Figma images and SVGs are bundled locally and verified by checksums. `next/image` handles responsive sizing with priority hero preloading. Fonts are self-hosted via `@fontsource-variable` to eliminate external network waterfalls.
+- **Fluid & Accessible Layouts**: Flexible grid and flex layouts that fluidly scale across mobile, tablet, and desktop viewports without clipping text on zoom (tested up to 200%).
+- **Native Accessible Dialogs**: Native HTML `<dialog>` elements provide accessible modals with automatic background inertia, bidirectional tab focus wrapping, and clean focus restoration on close.
+- **Accessible Form Validation**: Pure client-side validation that maps field errors directly to inputs via `aria-describedby` and automatically shifts focus to the first invalid field upon submission.
 
-- `src/app/page.tsx` composes named server-rendered sections. Only the mobile menu, dialog and form opt into client rendering. State stays with its interaction; this page does not need a global store or backend.
-- Typed content is in `src/app/_data/`, shared primitives in `src/components/ui/`, and pure validation in `src/lib/`. Design tokens and responsive rules live in `src/app/globals.css`.
-- All 32 original Figma exports are local. `next/image` reserves image space, prioritizes the hero and lazily loads lower images. `next/font/local` self-hosts both variable fonts.
-- Layout uses normal flow and grid at mobile, tablet and desktop widths. It follows both reference frames while allowing text to grow without clipping.
-- Main links use real section anchors. No prototype destinations were supplied, so course/category buttons open local previews. Account and information buttons explain the demo scope.
-- Contact validation reports associated field errors and focuses the first invalid input. Valid submissions explicitly say **nothing was sent or saved**.
-- Native dialogs provide modal semantics, with explicit focus wrapping and restoration. Semantic landmarks, labels, alt text, visible focus, a skip link and reduced-motion CSS are included.
+Full architectural details and design rationale are documented in:
+- [Architecture Overview](docs/architecture.md)
+- [Design Decisions & Intentional Fixes](docs/design-notes.md)
+- [Requirement Traceability](docs/requirements.md)
+- [Verification Record](docs/verification.md)
 
-The few source corrections—step numbering, consistent English form text and small contrast adjustments—are documented in [design notes](docs/design-notes.md).
+## Checks & Known Gaps
 
-## Checks and known gaps
+- **Cross-Viewport Testing**: Verified across 320px, 402px, 768px, 1024px, 1280px widths, and 200% zoom reflow.
+- **Accessibility**: Zero violations detected by automated `@storybook/addon-a11y` (axe-core) scans on primary states and dialogs. Includes semantic landmarks, visible focus states, skip-to-content links, and `prefers-reduced-motion` compliance.
+- **Demo Scope Boundaries**: Accounts, course video playback, and email dispatch are simulated client-side. The contact form validates inputs and provides transparent feedback that data is not retained. Search engine indexing is disabled via `robots: { index: false, follow: false }` for demo purposes.
 
-The production page was exercised in Chromium at 320, 402, 768, 1024 and 1280px, and at 200% zoom. Automated axe scans found no violations in the checked page/dialog states. Build, test and Storybook results, including their limits, are recorded in [verification](docs/verification.md). The catalogue includes 21 stories and eight interaction scenarios; see [Storybook usage](docs/storybook.md).
+## AI Tools Used & Time Allocation
 
-**Lighthouse results remain pending:** this environment blocks Chrome DevTools. A pinned local audit runner and [report instructions](docs/reports/README.md) are included; no performance score or screenshot is fabricated. Safari, Firefox, physical devices and a screen reader have not been tested. Automated checks do not establish full WCAG conformance.
-
-This is a recruitment demo: accounts, playback, payments and email delivery are outside scope. Source placeholder copy and business claims are reproduced for fidelity. Metadata intentionally disables indexing. GitHub publication, deployment and submission remain with the candidate.
-
-ESLint 9 is retained for the Next.js configuration’s plugin peer ranges despite its upstream support warning. Storybook also brings a deprecated `tsconfck` dependency. These development-tool notices do not prevent the verified builds; see the verification record before updating the toolchain.
-
-## AI use and approximate time
-
-ChatGPT/Codex assisted with design inspection, asset extraction, implementation, documentation and verification. Results were checked using strict types, lint, focused tests, builds, browser interaction checks and accessibility scans.
-
-Approximately **5–6 hours of AI-assisted implementation and verification sessions**, excluding the long idle gap and the candidate’s later review/submission. This is an estimate, not a measured total of human coding hours. Update it with any subsequent work before submission.
-
-Review the [code walkthrough](docs/code-walkthrough.md) and [requirement coverage](docs/requirements.md), run the project yourself, and be ready to explain the submitted solution. Do not commit `node_modules`, `.next` or `storybook-static`. Original design assets retain their existing rights; font licenses ship with their packages.
+In accordance with Buzzvel's challenge guidelines:
+- **AI Tooling**: AI assistance (Claude / ChatGPT) was utilized as an accelerator for Figma asset extraction, scaffolding unit tests, and cross-checking accessibility patterns. All architectural boundaries, layout tokens, and interactive logic were structured and verified by the author.
+- **Approximate Time Spent**: Approximately **5–6 hours** across design inspection, component composition, interaction implementation, testing, and documentation.

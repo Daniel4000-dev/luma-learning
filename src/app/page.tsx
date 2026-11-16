@@ -13,8 +13,14 @@ export default function HomePage() {
   return <div id="top">
     <SiteHeader />
     <main id="main-content" tabIndex={-1}>
-      <HeroSection /><CourseCategories /><FeaturedCourse /><HowItWorks />
-      <SocialProof /><Community /><Contact /><FinalCta />
+      <HeroSection />
+      <CourseCategories />
+      <FeaturedCourse />
+      <HowItWorks />
+      <SocialProof />
+      <Community />
+      <Contact />
+      <FinalCta />
     </main>
     <SiteFooter />
   </div>;
