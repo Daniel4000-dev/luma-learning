@@ -25,7 +25,7 @@ function CategoryCard({ category }: { category: Category }) {
 
 export function CourseCategories() {
   return (
-    <section id="courses" tabIndex={-1} aria-labelledby="categories-heading" className="section-space bg-white">
+    <section id="courses" tabIndex={-1} aria-labelledby="categories-heading" className="section-space scroll-mt-18 bg-white">
       <Container>
         <SectionHeading id="categories-heading" eyebrow="Find your next skill" title="Learn something worth knowing."
           description="Short, practical courses designed around skills you can put to work immediately." className="max-w-140" />

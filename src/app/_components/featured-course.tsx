@@ -10,7 +10,7 @@ import { ButtonLink } from "@/components/ui/button";
 
 export function FeaturedCourse() {
   return (
-    <section id="featured-course" tabIndex={-1} aria-labelledby="featured-heading" className="section-space bg-brand text-white">
+    <section id="featured-course" tabIndex={-1} aria-labelledby="featured-heading" className="section-space scroll-mt-18 bg-brand text-white">
       <Container className="featured-grid">
         <div className="relative">
           <div className="featured-photo relative overflow-hidden rounded-2xl">

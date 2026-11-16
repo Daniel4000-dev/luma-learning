@@ -7,7 +7,7 @@ import { AccountButton } from "./account-button";
 
 export function SiteHeader() {
   return (
-    <header className="relative z-20 border-b border-line bg-warm">
+    <header className="sticky top-0 z-40 border-b border-line bg-warm/95 backdrop-blur-sm transition-colors duration-200">
       <Container className="header-inner flex h-17 items-center justify-between lg:h-[69px]">
         <a href="#top" aria-label="Luma home" className="inline-flex rounded"><SvgAsset name="logoDark" /></a>
         <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm leading-6 text-muted lg:flex">

@@ -30,7 +30,7 @@ function CommunityCollage() {
 
 export function Community() {
   return (
-    <section id="community" tabIndex={-1} aria-labelledby="community-heading" className="section-space bg-warm">
+    <section id="community" tabIndex={-1} aria-labelledby="community-heading" className="section-space scroll-mt-18 bg-warm">
       <Container className="community-grid">
         <div>
           <SectionHeading id="community-heading" eyebrow="The people" title="Meet international students & teachers" className="[&_h2]:mt-2" />

@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" tabIndex={-1} aria-labelledby="how-heading" className="section-space bg-warm">
+    <section id="how-it-works" tabIndex={-1} aria-labelledby="how-heading" className="section-space scroll-mt-18 bg-warm">
       <Container>
         <SectionHeading id="how-heading" eyebrow="How Luma works" title="Less browsing. More learning." centered />
         <ol className="learning-steps">

@@ -6,7 +6,7 @@ import { ContactForm } from "./contact-form";
 
 export function Contact() {
   return (
-    <section id="contact" tabIndex={-1} aria-labelledby="contact-heading" className="section-space bg-white">
+    <section id="contact" tabIndex={-1} aria-labelledby="contact-heading" className="section-space scroll-mt-18 bg-white">
       <Container className="contact-grid">
         <div>
           <SectionHeading id="contact-heading" eyebrow="Contact" title="Get in touch" />
