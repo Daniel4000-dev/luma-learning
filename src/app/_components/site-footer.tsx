@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container";
 import { SvgAsset } from "@/components/ui/svg-asset";
 import { DialogButton } from "@/components/ui/dialog-button";
 import { ButtonLink } from "@/components/ui/button";
+import { BrandLogoLink } from "@/components/ui/brand-logo-link";
 
 const information = {
   Careers: { title: "Careers at Luma", copy: "This challenge demonstrates Luma’s landing page. There are no live job listings connected to this preview." },
@@ -23,7 +24,12 @@ export function SiteFooter() {
     <footer className="bg-ink pb-5 pt-15 text-white lg:pb-10 lg:pt-20">
       <Container>
         <div className="footer-grid">
-          <div className="footer-brand"><a href="#top" aria-label="Luma, back to top" className="block w-fit rounded"><SvgAsset name="logoLight" /></a><p className="mt-3 text-sm leading-6 text-footer-muted lg:max-w-60">Practical learning for curious people.</p></div>
+          <div className="footer-brand">
+            <BrandLogoLink aria-label="Luma, back to top" className="block w-fit rounded">
+              <SvgAsset name="logoLight" />
+            </BrandLogoLink>
+            <p className="mt-3 text-sm leading-6 text-footer-muted lg:max-w-60">Practical learning for curious people.</p>
+          </div>
           <nav aria-labelledby="footer-explore"><h2 id="footer-explore" className="eyebrow">Explore</h2><ul className="footer-links">
             <li><a href="#courses" className="footer-link">Courses</a></li><li><a href="#courses" className="footer-link">Categories</a></li><li><a href="#community" className="footer-link">Instructors</a></li><li><a href="#contact" className="footer-link">For Teams</a></li>
           </ul></nav>

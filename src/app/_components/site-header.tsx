@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/container";
 import { SvgAsset } from "@/components/ui/svg-asset";
 import { buttonClass } from "@/components/ui/button";
+import { BrandLogoLink } from "@/components/ui/brand-logo-link";
 import { navigation } from "@/app/_data/content";
 import { MobileNavigation } from "./mobile-navigation";
 import { AccountButton } from "./account-button";
@@ -9,7 +10,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-warm/95 backdrop-blur-sm transition-colors duration-200">
       <Container className="header-inner flex h-17 items-center justify-between lg:h-[69px]">
-        <a href="#top" aria-label="Luma home" className="inline-flex rounded"><SvgAsset name="logoDark" /></a>
+        <BrandLogoLink className="inline-flex rounded">
+          <SvgAsset name="logoDark" />
+        </BrandLogoLink>
         <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm leading-6 text-muted lg:flex">
           {navigation.map(({ label, href }) => <a className="nav-link" key={label} href={href}>{label}</a>)}
         </nav>
