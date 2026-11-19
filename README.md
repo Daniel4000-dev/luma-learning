@@ -58,5 +58,5 @@ Full architectural details and design rationale are documented in:
 ## AI Tools Used & Time Allocation
 
 In accordance with Buzzvel's challenge guidelines:
-- **AI Tooling**: AI assistance (Claude / ChatGPT) was utilized as an accelerator for Figma asset extraction, scaffolding unit tests, and cross-checking accessibility patterns. All architectural boundaries, layout tokens, and interactive logic were structured and verified by the author.
-- **Approximate Time Spent**: Approximately **5–6 hours** across design inspection, component composition, interaction implementation, testing, and documentation.
+- **AI Tooling**: AI assistance (Claude / ChatGPT) was utilized as an accelerator for Figma asset extraction, scaffolding unit tests, and cross-checking accessibility patterns. All architectural boundaries, layout tokens, and interactive logic were structured, reviewed, and verified by me.
+- **Approximate Time Spent**: Approximately **10–12 hours** in total, distributed across focused sessions between initial implementation, responsiveness testing down to 320px, Storybook component cataloging, UX refinements, and walkthrough recording.
