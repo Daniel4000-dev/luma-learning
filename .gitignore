@@ -2,7 +2,6 @@ node_modules/
 .next/
 out/
 coverage/
-.env*
 !.env.example
 .DS_Store
 *.tsbuildinfo
@@ -10,3 +9,4 @@ npm-debug.log*
 storybook-static/
 AGENTS.md
 
+config.bat

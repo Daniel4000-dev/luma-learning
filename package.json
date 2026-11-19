@@ -7,16 +7,16 @@
     "node": ">=24 <25"
   },
   "scripts": {
-    "dev": "next dev --hostname 0.0.0.0",
-    "build": "next build",
-    "start": "next start --hostname 0.0.0.0",
+    "dev": "node init && next dev --hostname 0.0.0.0",
+    "build": "node init && next build",
+    "start": "node init && next start --hostname 0.0.0.0",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "node --import jiti/register --test src/lib/contact-validation.test.ts",
     "check": "npm run lint && npm run typecheck && npm test && npm run verify:assets && npm run build && npm run build-storybook",
     "verify:assets": "node scripts/verify-assets.mjs",
     "storybook": "storybook dev -p 6006 --no-open",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "audit:lighthouse": "node scripts/lighthouse.mjs"
   },
   "dependencies": {
